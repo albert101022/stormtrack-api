@@ -1,9 +1,0 @@
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/nhc-latest.js",
-      "use": "@vercel/node"
-    }
-  ]
-}
