@@ -1,16 +1,22 @@
 {
   "version": 2,
-  "functions": {
-    "api/nhc-latest.js": {
-      "maxDuration": 30
+  "builds": [
+    {
+      "src": "api/nhc-latest.js",
+      "use": "@vercel/node"
     }
-  },
+  ],
+  "routes": [
+    {
+      "src": "/api/nhc-latest",
+      "dest": "/api/nhc-latest.js"
+    }
+  ],
   "headers": [
     {
       "source": "/api/(.*)",
       "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Cache-Control", "value": "s-maxage=300, stale-while-revalidate=600" }
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
       ]
     }
   ]
