@@ -1,6 +1,0 @@
-{
-  "name": "stormtrack-api",
-  "version": "2.0.0",
-  "description": "NHC Advisory proxy for StormTrack — zero external dependencies",
-  "engines": { "node": ">=18" }
-}
