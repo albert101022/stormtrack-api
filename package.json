@@ -1,0 +1,17 @@
+{
+  "name": "stormtrack-api",
+  "version": "4.0.0",
+  "description": "StormTrack API — NHC, JTWC, GOES, NEXRAD, SST, Shear, Conditions",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "shapefile": "^0.6.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "UNLICENSED"
+}

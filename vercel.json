@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "functions": {
+    "api/nhc-latest.js": {
+      "maxDuration": 30,
+      "memory": 512
+    },
+    "api/goes-tile.js": {
+      "maxDuration": 60
+    },
+    "api/nexrad-l2.js": {
+      "maxDuration": 60,
+      "memory": 1024
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Cache-Control", "value": "s-maxage=300, stale-while-revalidate" }
+      ]
+    }
+  ]
+}
